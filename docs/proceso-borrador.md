@@ -1,117 +1,82 @@
-# Borrador de modelo de proceso – Equipo SinfoníaSoft
+# Borrador de modelo de proceso – Sistema de Acopio de Leche
 
-**Integrantes que participaron:**
+## Integrantes que participaron
+
 - Jhon Willian Mayta Arotaype
 - Luis Alejandro Chino León
 - Rody Jossep Chuquimamani Apaza
 - Cristhian Brandonlyn Alejo Castillo
 
-**Proyecto:** Sistema web para la gestión de alquiler de escenarios y equipos de sonido para eventos  
-**Empresa:** Sonido Activo Canaza  
-**Curso:** Ingeniería de Software I
-
----
-
-## 1. Resumen de proceso y gestión de software
-
-El proceso de ingeniería de software comprende el conjunto de actividades organizadas que permiten desarrollar y mantener un sistema de software. Define cómo se realiza el trabajo, qué actividades debe cumplir el equipo y cómo se orienta el desarrollo hacia un producto que satisfaga las necesidades de los usuarios.
-
-La gestión de la ingeniería de software incluye la planificación, organización, estimación, seguimiento y control de las actividades del proyecto. Permite coordinar al equipo, administrar recursos, controlar el avance e identificar riesgos. Una buena gestión facilita la toma de decisiones ante cambios o problemas durante el desarrollo.
-
-En nuestro caso, estos conceptos se aplican al desarrollo de un sistema web para **Sonido Activo Canaza**, empresa dedicada al alquiler de escenarios y equipos de sonido para eventos. El sistema gestionará clientes, escenarios, equipos, disponibilidad y reservas. Por ello es necesario organizar las actividades del equipo, definir funcionalidades prioritarias y realizar un seguimiento constante del avance.
-
----
-
-## 2. Comparación de modelos de proceso
-
-### 2.1 Modelo en cascada
-Organiza el desarrollo en etapas secuenciales (requisitos → diseño → implementación → pruebas → entrega).  
-**Ventaja:** estructura clara y planificación definida desde el inicio.  
-**Desventaja:** poca flexibilidad ante cambios de requisitos.  
-Para nuestro proyecto resultaría rígido, porque es probable que aparezcan nuevas necesidades relacionadas con reservas, disponibilidad o gestión de eventos durante el desarrollo.
-
-### 2.2 Modelo incremental
-Desarrolla el sistema por partes o incrementos, cada uno con nuevas funcionalidades.  
-**Ventaja:** permite entregar versiones funcionales de forma progresiva.  
-**Desventaja:** requiere buena planificación de la integración entre incrementos.  
-Es viable para nuestro sistema (por ejemplo: primero clientes y equipos, luego disponibilidad y finalmente reservas), pero ofrece menos estructura de roles y eventos que el enfoque ágil.
-
-### 2.3 Modelo ágil
-Desarrolla el software de forma iterativa e incremental, con entregas frecuentes y adaptación continua de los requisitos. El equipo colabora estrechamente y revisa el avance de manera constante.  
-Es especialmente adecuado cuando los requisitos no están completamente definidos o pueden cambiar.
-
----
-
-## 3. Modelo de proceso elegido
+## Modelo de proceso elegido
 
 **Ágil (Scrum)**
 
----
+## Justificación
 
-## 4. Justificación de la elección
+Nuestro proyecto consiste en el desarrollo de un **sistema de software para la gestión y control del acopio de leche**, orientado a organizar el registro de productores, la recepción de leche, el control de cantidades y calidad, los pagos y los reportes relacionados con el proceso de acopio.
 
-Elegimos el modelo ágil porque el proyecto presenta características que se benefician de la flexibilidad y de las entregas frecuentes:
+Al inicio del trabajo los requisitos aún no están completamente definidos y es esperable que evolucionen conforme avancemos y recibamos retroalimentación del docente y, de ser posible, de la empresa o centro de acopio.
 
-- Los requisitos aún no están completamente definidos y es esperable que evolucionen conforme se realicen reuniones con la empresa y se revisen los avances.
-- El sistema debe gestionar varios módulos (clientes, escenarios, equipos de sonido, disponibilidad y reservas) que pueden construirse e integrarse de forma progresiva.
-- Contamos con aproximadamente 14 semanas. Los sprints cortos permiten entregar valor temprano y recibir retroalimentación del docente y de la empresa.
-- El equipo está formado por 4 integrantes con algo de experiencia, tamaño ideal para un Scrum Team.
-- La naturaleza del negocio (alquiler de escenarios y equipos para eventos) implica cambios frecuentes de disponibilidad y necesidades, por lo que un enfoque adaptable es más conveniente que uno secuencial rígido.
+Elegimos un enfoque ágil basado en Scrum por las siguientes razones:
 
-Comparado con cascada e incremental, el enfoque ágil nos da mejor capacidad de respuesta al cambio y una estructura clara de roles, eventos y artefactos (Product Backlog, Sprint Backlog, Incremento, etc.).
+1. **Requisitos inciertos:** Al no contar todavía con una especificación completamente estable, un modelo en cascada resultaría demasiado rígido. Scrum nos permite descubrir y refinar los requisitos de forma iterativa a lo largo de los sprints.
 
----
+2. **Entregas parciales de valor:** Contamos con aproximadamente 14 semanas. Con sprints de 2 semanas podemos entregar incrementos funcionales. Por ejemplo, en un primer sprint se puede desarrollar el registro y gestión de productores; en el siguiente, el registro de recepción y cantidad de leche; posteriormente, el control de calidad, pagos e informes.
 
-## 5. Riesgos y limitaciones del enfoque ágil
+3. **Tamaño del equipo:** Somos 4 integrantes con algo de experiencia previa. Este tamaño permite conformar un Scrum Team y distribuir las actividades de desarrollo, análisis, pruebas y documentación.
 
-1. **Cambios frecuentes en los requisitos**  
-   Las solicitudes constantes de la empresa pueden alterar la planificación.  
-   *Mitigación:* priorizar el Product Backlog y definir objetivos claros por sprint.
+4. **Feedback frecuente:** Presentaremos los avances al profesor y, si se concreta, también a la empresa o responsable del centro de acopio. Scrum está diseñado para incorporar retroalimentación de manera continua durante el desarrollo.
 
-2. **Falta de coordinación o disciplina del equipo**  
-   Scrum exige comunicación constante y respeto a los eventos. Si no se mantiene la disciplina, se generan retrasos o trabajo duplicado.  
-   *Mitigación:* establecer Daily Scrum y Definition of Done claras desde el inicio.
+5. **Naturaleza del dominio:** El proceso de acopio de leche involucra productores, recepción de leche, cantidades entregadas, calidad, precios, pagos, fechas y reportes. Estos procesos pueden presentar cambios y nuevas necesidades, por lo que un enfoque ágil permite adaptarse mejor.
 
-3. **Disponibilidad limitada de los usuarios de la empresa**  
-   Si los responsables de Sonido Activo Canaza no pueden revisar los avances con frecuencia, se puede detectar tarde la necesidad de cambios.  
-   *Mitigación:* programar revisiones periódicas y validar con el docente cuando no sea posible con el cliente.
+## Principales funcionalidades del sistema
 
----
+El sistema de **Acopio de Leche** podría contemplar las siguientes funcionalidades:
 
-## 6. Aplicación inicial del proceso al proyecto
+- Registro y gestión de productores de leche.
+- Registro de entregas de leche.
+- Control de cantidad de leche recibida.
+- Registro de fecha y hora de recepción.
+- Control de calidad de la leche.
+- Registro del precio por litro.
+- Cálculo del monto correspondiente a cada productor.
+- Registro y control de pagos.
+- Consulta del historial de entregas.
+- Generación de reportes de acopio.
+- Control de información por fechas y productores.
 
-Organización tentativo por etapas / sprints:
+## Comparación con otras opciones
 
-**Primera etapa**
-- Registro y gestión de clientes
-- Registro de escenarios
-- Registro de equipos de sonido
+Comparamos brevemente las otras opciones:
 
-**Segunda etapa**
-- Consulta de disponibilidad de escenarios y equipos
-- Gestión de fechas de eventos
-- Actualización del estado de los recursos
+- **Cascada:** Solo sería adecuada si los requisitos estuvieran completamente definidos y fueran estables desde el inicio, lo cual no es nuestro caso.
 
-**Tercera etapa**
-- Registro de solicitudes y reservas
-- Gestión del estado de las reservas
-- Generación de información de los servicios contratados
+- **Incremental clásico:** También es viable, pero Scrum nos aporta una estructura más clara de roles, eventos y artefactos, facilitando la organización del equipo y el seguimiento del progreso.
 
-**Cuarta etapa**
-- Pruebas del sistema
-- Corrección de errores
-- Mejoras según la retroalimentación recibida
+## Riesgos o limitaciones del enfoque elegido
 
----
+1. **Dependencia de la disciplina del equipo:** Scrum requiere que se respeten los eventos como Daily Scrum, Sprint Planning, Sprint Review y Sprint Retrospective. Si el equipo no mantiene la disciplina, el proceso puede degradarse y perderse el beneficio de la inspección y adaptación.
 
-## 7. Conclusión
+2. **Posible acumulación de deuda técnica:** Al priorizar la entrega de valor en cada sprint, existe el riesgo de postergar la calidad del código o la arquitectura. Debemos ser cuidadosos con la Definition of Done e incluir tareas de refactorización y control de deuda técnica en el backlog.
 
-Después de comparar los modelos cascada, incremental y ágil, el equipo considera que el **modelo ágil** es el más adecuado para el desarrollo del sistema de Sonido Activo Canaza. Permite desarrollar las funcionalidades de forma progresiva, incorporar retroalimentación y adaptarse a los cambios de requisitos, lo que facilita construir un producto más alineado con las necesidades reales de la empresa.
+3. **Disponibilidad limitada del cliente:** En un entorno académico, el feedback del profesor o de un eventual responsable del centro de acopio no siempre será tan frecuente como en un proyecto real. Esto puede afectar la priorización del Product Backlog si no logramos realizar reuniones regulares de refinamiento.
 
----
+4. **Cambios en los requisitos:** Durante el desarrollo pueden aparecer nuevas necesidades relacionadas con el registro de productores, control de calidad, pagos o reportes. Scrum permite gestionar estos cambios mediante la actualización y priorización del Product Backlog.
 
-## 8. Referencias
+## Posibles sprints del proyecto
+
+| Sprint | Actividades principales |
+|---|---|
+| **Sprint 1** | Registro de usuarios y productores |
+| **Sprint 2** | Registro de entregas y cantidades de leche |
+| **Sprint 3** | Control de calidad de la leche |
+| **Sprint 4** | Cálculo de precios y gestión de pagos |
+| **Sprint 5** | Historial, reportes y consultas |
+| **Sprint 6** | Pruebas, correcciones y mejoras finales |
+| **Sprint 7** | Integración, documentación y presentación |
+
+## Referencias
 
 - Washizaki, H. (Ed.). (2024). *Guide to the SWEBOK, Version 4.0*. IEEE Computer Society.
 - Sommerville, I. (2016). *Ingeniería de software* (10.ª ed., cap. 2). Pearson.
-- Schwaber, K., & Sutherland, J. *La Guía de Scrum* (versión vigente).
+- Schwaber, K., & Sutherland, J. *La Guía de Scrum* (versión 2020).
